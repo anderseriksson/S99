@@ -18,10 +18,14 @@ A common implementation is Recursion i combination with the match case statement
 
 Where lists should shrink (e.g. compress) then consider foldRight
 
+*Status: all tests exists and all implementations*
 
 ### "Arithmetic" (P31-P41)
 
+*Status: P31-P37 implemented *
+
 ### "Logic and Codes" (P46-P50)
+
 
 ### "Binary Trees" (P55-P69)
 
@@ -30,6 +34,8 @@ Where lists should shrink (e.g. compress) then consider foldRight
 ### "Graphs" (P80-P89)
 
 ### "Miscellaneous Problems" (P90-P99)
+
+*Status: Only a few problems are implemented by original project*
 
 
 
@@ -48,7 +54,7 @@ All the implementations could have "dummy shells" so that they compile but tests
 
 Lab participants may look at a working implementation if they get stuck (see below for how this could be done).
 
-Hopefully students will also find interesting implementations and they could be commited to the project for others to learn from.
+Hopefully students will also find interesting implementations and they could be committed to the project for others to learn from.
 
 
 
@@ -77,7 +83,16 @@ the lab so here is a *prioritized* project requirements list to work out of.
 
 3. Provide working implementations for most of the problems.
 
-4. Provide student aids like hints, references to books and articles and reference sources to assist learning.
+4. Provide means of "hiding" the implementations so that an empty implementation could be empty shells while a solution is
+available elsewhere.
+
+5. Provide student aids like hints, references to books and articles and reference sources to assist learning.
+
+
+Development ideas
+-----------------
+
+Reorganize code to follow original project's file structure ( e.g. aperiodic.net/phil/scala/s-99/arithmetic1.scala )
 
 Similar ideas
 -------------
