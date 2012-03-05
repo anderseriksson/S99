@@ -8,7 +8,7 @@ package com.jayway.s99
 
 object p07 {
   def flatten(list:List[Any]):List[Any] = list flatMap {
-    case element: List[_] => flatten(element)
+    case element: List[_] => flatten(element) //todo don't understand - consider flatMap method above...
     case element => List(element) 
   }
 }
