@@ -5,7 +5,7 @@ import org.scalatest.matchers.ShouldMatchers
 
 class p04Spec extends FlatSpec with ShouldMatchers {
 
-  "lngth method" should "return the lenfth of a list that has some elements" in {
+  "length method" should "return the length of a list that has some elements" in {
     p04.length(List(1,2,3,4)) should equal (4)
   }
 
