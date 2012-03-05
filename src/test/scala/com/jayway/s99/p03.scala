@@ -10,7 +10,13 @@ class p03Spec extends FlatSpec with ShouldMatchers {
   }
 
   "nth method" should "when asked for an element that is greater than the size of the list, then it should return the last element" in {
-    p03.nth(11212323, List(1,2,3)) should equal (3)  
+    p03.nth(11212323, List(1,2,3)) should equal (3)
+  }
+
+  "nth method" should "when asked for an element that is greater than the size of the list, then it fails on original implementation " in {
+    intercept[NoSuchElementException] {
+      p03.nthRecursive(11212323, List(1,2,3))
+    }
   }
 
 }
