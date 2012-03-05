@@ -1,13 +1,15 @@
 package com.jayway.s99.logic
 
+import org.scalatest.matchers.ShouldMatchers
+import org.scalatest.FlatSpec
+
 /**
- * Created by IntelliJ IDEA.
- * User: anders
- * Date: 3/5/12
- * Time: 9:54 PM
- * To change this template use File | Settings | File Templates.
  */
+class p46Spec extends FlatSpec with ShouldMatchers {
 
-class p46Spec {
+  "logic not " should "return inverse boolean values"
+    com.jayway.s99.logic.S99Logic.not(true) should equal (false)
 
+  "logic not " should "return inverse boolean values"
+    com.jayway.s99.logic.S99Logic.not(false) should equal (true)
 }
