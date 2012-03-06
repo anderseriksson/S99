@@ -14,4 +14,8 @@ object S99Logic {
     case false => true
     }
   }
+  
+  def and(x: Boolean, y: Boolean): Boolean = {
+      x && y
+  }
 }
