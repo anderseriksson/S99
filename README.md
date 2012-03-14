@@ -26,8 +26,11 @@ Where lists should shrink (e.g. compress) then consider foldRight
 
 ### "Logic and Codes" (P46-P50)
 
+*Status: work in progress*
 
 ### "Binary Trees" (P55-P69)
+
+*Status: very abstract stuff here, too difficult for me right now... *
 
 ### "Multiway Trees" (P70C-P73)
 
