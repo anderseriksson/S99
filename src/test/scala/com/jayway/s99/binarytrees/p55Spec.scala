@@ -9,13 +9,26 @@ import org.scalatest.FlatSpec
 class p55Spec extends FlatSpec with ShouldMatchers {
 
   import com.jayway.s99.binarytrees.Tree._
-
-  "logic not " should "return inverse boolean values"
+/*
+  "balanced tree " should "return inverse boolean values"
     cBalanced(4, "x") should
-      equal("(T(x T(x . .) T(x . T(x . .))), T(x T(x . T(x . .)) T(x . .)), T(x T(x . .) T(x T(x . .) .)), T(x T(x T(x . .) .) T(x . .)))")
+      equal("List(T(x T(x . .) T(x . T(x . .))), " +
+                 "T(x T(x . T(x . .)) T(x . .)), " +
+                 "T(x T(x . .) T(x T(x . .) .)), " +
+                 "T(x T(x T(x . .) .) T(x . .)))")
 
+  "balanced tree " should "return inverse boolean values"
+  cBalanced(2, "a") should
+    equal("List(T(a T(a . .) T(a . T(a . .)))")
 
-    //TODO investigate    Node  and Tree ???
+  "balanced tree " should "return inverse boolean values"
+  cBalanced(1, "a") should
+    equal("List(T(a . .))")
+*/
+  "balanced tree of one node " should "one node list"
+  cBalanced(1, "a") should
+    equal(List(Node("a")))
+
 
 
 }

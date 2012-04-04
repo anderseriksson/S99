@@ -44,9 +44,13 @@ class p46Spec extends FlatSpec with ShouldMatchers {
     xor(true,false) should equal (true)
     xor(false,true) should equal (true)
 
-
   "print table with and " should "give a nice table "
-    table2((a: Boolean, b: Boolean) => and(a, or(a, b))) should equal ("TODO fix so that table2 returns a string or a stream to be testable")
+    table2((a: Boolean, b: Boolean) => and(a, or(a, b))) should equal (
+        "A     B     result\n" +
+        "true  true  true  \n" +
+        "true  false true  \n" +
+        "false true  false \n" +
+        "false false false \n")
 
 
 
